@@ -3,12 +3,12 @@ version: "3"
 services:
  devopsdb:
    container_name: devopsdb
-   image: shaikmustafa/ccitrepo:dbimage
+   image: venu789/newrepo:dbimage
    ports:
      - "3306:3306"
 
  application:
-   image: shaikmustafa/ccitrepo:appimage
+   image: venu789/newrepo:appimage
    container_name: appcontainer
    ports:
      - "1234:8080"
