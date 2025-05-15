@@ -5,12 +5,12 @@ services:
    container_name: devopsdb
    image: venu789/newrepo:dbimage
    ports:
-     - "3306:3306"
+     - "3307:3306"
 
  application:
    image: venu789/newrepo:appimage
    container_name: appcontainer
    ports:
-     - "1234:8080"
+     - "1235:8080"
    depends_on:
      - "devopsdb"
